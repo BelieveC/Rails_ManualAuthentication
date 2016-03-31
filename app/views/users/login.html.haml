@@ -1,0 +1,5 @@
+=form_tag(url:{action:"login_attempt",controller:"users"})
+	=text_field_tag(params[:email],label:"Email")
+	=text_field_tag(params[:password],label:"Password")
+	=submit_tag("Login")
+	

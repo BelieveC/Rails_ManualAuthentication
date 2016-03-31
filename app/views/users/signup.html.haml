@@ -1,0 +1,4 @@
+=simple_form_for(@user,url:{controller:"users",action:"create"}) do |f|
+	=f.input :email,label:"Email",class:"form-control"
+	=f.input :password,label:"Password",class:"form-control"
+	=f.submit class:"btn btn-primary"
