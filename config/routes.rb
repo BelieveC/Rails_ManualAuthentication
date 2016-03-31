@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get '/login'=>"users#login",as:"login"
+  post '/login'=>"users#login_attempt"
   resources :users;
   root 'users#signup'
     # The priority is based upon order of creation: first created -> highest priority.

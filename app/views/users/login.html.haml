@@ -1,5 +1,4 @@
-=form_tag(url:{action:"login_attempt",controller:"users"})
-	=text_field_tag(params[:email],label:"Email")
-	=text_field_tag(params[:password],label:"Password")
+=form_tag(url:{action:"login_attempt",controller:"users"}) do
+	=text_field_tag(params[:email])
+	=text_field_tag(params[:password])
 	=submit_tag("Login")
-	
