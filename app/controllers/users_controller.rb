@@ -25,6 +25,7 @@ class UsersController < ApplicationController
 			end
 		else
 			flash[:notice] = "Blank Fields"
+                        render('login')
 		end
 
 		if @au
